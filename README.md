@@ -4,7 +4,7 @@
 
 Usage
 -----
-* Simply make a comment in any publically available subreddit with the bots username + hero + abilities default PC keybind (seperated by spaces).
+* Simply make a comment in any publically available subreddit with the bots username + hero + abilities default PC keybind (separated by spaces).
 * /u/OWStatsBot can be anywhere in your comment, as long as it's on a new line by itself.
 * NOTE: You can only call the bot once per comment.
 
