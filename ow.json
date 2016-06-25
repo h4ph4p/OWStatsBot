@@ -1,0 +1,958 @@
+{
+  "bastion": {
+    "stats": {
+      "Name": "Bastion",
+      "Role": "Defense",
+      "Health": "300 (100 of which is armour)",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "(Recon)Ability Name": "Configuration: Recon",
+      "(Recon)Damage": "6-20 (depending on range)",
+      "(Recon)Fire Rate": "8 rounds per second",
+      "(Recon)Reload Time": "2 sec",
+      "(Recon)Ammo": "20",
+      "(Recon)Headshot": "Yes",
+      "(Sentry)Ability Name": "Configuration: Sentry",
+      "(Sentry)Damage": "4-15 (depending on range)",
+      "(Sentry)Fire Rate": "~30 rounds per second",
+      "(Sentry)Reload Time": "2 sec",
+      "(Sentry)Ammo": "200",
+      "(Sentry)Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Self-Repair",
+      "Healing": "25% of max HP/sec",
+      "Cooldown": "1 sec if interrupted ",
+      "Cast Time": "Channelled"
+    },
+    "shift": {
+      "Ability Name": "Reconfiguration",
+      "Cast Time": "Recon > Sentry: 1.5sec | Sentry > Recon: 0.5sec"
+    },
+    "q": {
+      "Ability Name": "Configuration: Tank",
+      "Bonus Armour": "150 armour immediately added when activated",
+      "Damage": "205 for direct hit (splash damage varies)",
+      "Fire Rate": "~1rps",
+      "Ammo": "Infinite",
+      "Cast Time": "1sec",
+      "Duration": "8sec",
+      "Self Damage": "Up to 40 self damage",
+      "Headshot": "No"
+    }
+  },
+  "dva": {
+    "stats": {
+      "Name": "D.va",
+      "Role": "Tank",
+      "Pilot Health": "150",
+      "Mech Health": "500 (400 of which is armour)",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "11/10/2015"
+    },
+    "lmb": {
+      "(Pilot)Ability Name": "Light Gun",
+      "(Pilot)Damage": "14",
+      "(Pilot)Fire Rate": "6.6 rounds per second",
+      "(Pilot)Ammo": "20",
+      "(Pilot)Headshot": "Yes",
+      "(Mech)Ability Name": "Fusion Cannons",
+      "(Mech)Damage": "0.5-3 per bullet (depending on range)",
+      "(Mech)Fire Rate": "7 rounds per second",
+      "(Mech)Ammo": "Infinite",
+      "(Mech)Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Defense Matrix",
+      "Duration": "3 sec",
+      "Cooldown": "10 sec",
+      "Shield Length": "15 meters"
+    },
+    "shift": {
+      "Ability Name": "Boosters",
+      "Damage": "25 damage",
+      "Duration": "2 sec",
+      "Cooldown": "10 sec",
+      "Distance": "25 meters",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Self Destruct",
+      "Damage": "1000 (decreasing with range from mech)",
+      "Delay": "4 sec",
+      "Cooldown": "10 sec",
+      "Headshot": "No"
+    }
+  },
+  "genji": {
+    "stats": {
+      "Name": "Genji",
+      "Role": "Offense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "11/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Shuriken: Burst",
+      "Damage": "84 (28 per star)",
+      "Fire Rate": "3 per 0.97 sec",
+      "Reload Time": "1.5 seconds",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Shuriken: Fan",
+      "Damage": "84 (28 per star)",
+      "Fire Rate": "3 per 0.73 sec",
+      "Reload Time": "1.5 seconds",
+      "Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Deflect",
+      "Duration": "2 sec",
+      "Cooldown": "8 sec",
+      "Headshot": "Yes (deflected projectiles can headshot)"
+    },
+    "shift": {
+      "Ability Name": "Swift Strike",
+      "Damage": "50",
+      "Cooldown": "8 sec",
+      "Reset on kill": "Yes",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Dragonblade",
+      "Damage": "120 per slash",
+      "Fire Rate": "2 slashes per 1.83 sec",
+      "Max number of slashes": "9",
+      "Reset Swift Strike": "Yes on cast",
+      "Headshot": "No"
+    }
+  },
+  "hanzo": {
+    "stats": {
+      "Name": "Hanzo",
+      "Role": "Defense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Storm Bow",
+      "Damage": "29-125",
+      "Fire Rate": "Max charge is 1.2 seconds",
+      "Ammo": "Infinite",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Storm Bow: Cancel",
+      "Use": "Cancels a charged shot"
+    },
+    "e": {
+      "Ability Name": "Scatter Arrow",
+      "Damage": "75 per scattered arrow, 5 total. 375 if all connect",
+      "Scatter Bounces": "3 per scattered arrow",
+      "Cooldown": "10 sec",
+      "Headshot": "Initial arrow: Yes. Scattered arrows: No"
+    },
+    "shift": {
+      "Ability Name": "Sonic Arrow",
+      "Damage": "29-125",
+      "Duration": "10 sec",
+      "Cooldown": "20 sec",
+      "Headshot": "Yes"
+    },
+    "q": {
+      "Ability Name": "Dragonstrike",
+      "Damage": "200+ per sec",
+      "Cast Time": "1.5 sec",
+      "Dragon Width": "4 meters",
+      "Headshot": "Initial arrow: Yes. Dragons: No"
+    }
+  },
+  "junkrat": {
+    "stats": {
+      "Name": "Junkrat",
+      "Role": "Defense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Frag Launcher",
+      "Damage": "120 for direct hit (splash damage varies)",
+      "Fire Rate": "1.5 rounds per second",
+      "Reload Time": "1.5 seconds",
+      "Self Damage": "Up to 40 self damage",
+      "Headshot": "No"
+    },
+    "rmb": {
+      "Ability Name": "Concussion Mine: Activate",
+      "Use": "Triggers a concussion mine to explode"
+    },
+    "e": {
+      "Ability Name": "Steel Trap",
+      "Damage": "80",
+      "Duration": "Enemies are rooted for 3 seconds",
+      "Cooldown": "10 seconds",
+      "Headshot": "No"
+    },
+    "shift": {
+      "Ability Name": "Concussion Mine",
+      "Damage": "120",
+      "Cooldown": "8 sec",
+      "Self Damage": "No",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Rip-Tire",
+      "Damage": "Up to 600 (decreasing with range from tire)",
+      "Tire Health": "100",
+      "Duration": "10 sec",
+      "Headshot": "No"
+    }
+  },
+  "lucio": {
+    "stats": {
+      "Name": "Lucio",
+      "Role": "Support",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec. 7.1 meters/sec with speed aura",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Sonic Amplifier: Projectiles",
+      "Damage": "16 per projectile (64 if all projectiles hit)",
+      "Fire Rate": "1 burst per second, 4 rounds in a burst",
+      "Reload Time": "1.25 seconds",
+      "Ammo": "20",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Sonic Amplifier: SoundWave",
+      "Damage": "25",
+      "Cooldown": "4 seconds",
+      "Reload Time": "1.25 seconds",
+      "Ammo": "20 (uses 4 per shot)",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Amp It Up",
+      "Amped Heal": "40 health/sec",
+      "Amped Speed": "Base movement speed increased by ~100%",
+      "Duration": "3 sec",
+      "Cooldown": "12 sec",
+      "Shield Length": "15 meters"
+    },
+    "shift": {
+      "Ability Name": "Crossfade",
+      "Heal": "12 health/sec",
+      "Speed": "Base movement speed increased by ~30%",
+      "Duration": "Aura, always on",
+      "Range": "30 meters",
+      "Line of Sight": "Required"
+    },
+    "q": {
+      "Ability Name": "Sound Barrier",
+      "Shield": "500 shield granted to allies on cast, decreasing 100/sec",
+      "Duration": "6 sec",
+      "Line of Sight": "Not required"
+    }
+  },
+  "mccree": {
+    "stats": {
+      "Name": "McCree",
+      "Role": "Offense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Peacekeeper",
+      "Damage": "35-70 (depending on range)",
+      "Fire Rate": "2 rounds per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "6",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Peacerkeeper: Fan the Hammer",
+      "Damage": "25-45 (depending on range)",
+      "Fire Rate": "6 rounds per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "6",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Flashbang",
+      "Damage": "25",
+      "Duration": "0.7 sec",
+      "Cooldown": "10 sec",
+      "Headshot": "No"
+    },
+    "shift": {
+      "Ability Name": "Combat Roll",
+      "Range": "6 meters",
+      "Cooldown": "8 sec",
+      "Reload on Use": "Yes"
+    },
+    "q": {
+      "Ability Name": "Deadeye",
+      "Charge Time": "1 sec per 100 health on enemy",
+      "Duration": "5 sec",
+      "Line of Sight": "Required",
+      "Charge Usage": "50% on activation, 50% upon shooting",
+      "Headshot": "No"
+    }
+  },
+  "mei": {
+    "stats": {
+      "Name": "Mei",
+      "Role": "Defense",
+      "Health": "250",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "10/11/2015"
+    },
+    "lmb": {
+      "Ability Name": "Endothermic Blaster: Frost Stream",
+      "Damage": "45 damage per second",
+      "Fire Rate": "20 rounds per second",
+      "Ammo": "200",
+      "Freeze Time": "1.5 seconds",
+      "Thaw Time": "2 seconds after not being hit by Frost Stream",
+      "Headshot": "No"
+    },
+    "rmb": {
+      "Ability Name": "Endothermic Blaster: Icicle Projectiles",
+      "Damage": "22-75 (depending on range)",
+      "Fire Rate": "2 rounds per second",
+      "Ammo": "200 (uses 25 per shot)",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Ice Wall",
+      "Pillars per Wall": "5 ice pillars make up the wall",
+      "Pillar Health": "500",
+      "Duration": "4.5 sec",
+      "Cooldown": "10 sec"
+    },
+    "shift": {
+      "Ability Name": "Cryo-Freeze",
+      "Heal": "37.5 health/sec",
+      "Invulnerability": "Yes",
+      "Duration": "4 sec",
+      "Cooldown": "12 sec"
+    },
+    "q": {
+      "Ability Name": "Blizzard",
+      "Damage": "19.4 per sec",
+      "Cast Time": "1.5 sec",
+      "Duration": "5 sec",
+      "Range": "8 meter radius",
+      "Freeze Start": "3.5 seconds in, lasts the remainder of duration",
+      "Headshot": "No"
+    }
+  },
+  "mercy": {
+    "stats": {
+      "Name": "Mercy",
+      "Role": "Support",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "(Heal)Ability Name": "Caduceus Staff: Healing Stream",
+      "(Heal)Healing": "50 health/sec",
+      "(Heal)Range": "15 meters",
+      "(Pistol)Ability Name": "Caduceus Blaster",
+      "(Pistol)Damage": "20",
+      "(Pistol)Fire Rate": "5 rounds per second",
+      "(Pistol)Reload Time": "1 sec",
+      "(Pistol)Ammo": "20",
+      "(Pistol)Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Caduceus Staff: Damage Stream",
+      "Damage Increase": "30%",
+      "Range": "15 meters"
+    },
+    "shift": {
+      "Ability Name": "Guarding Angel",
+      "Cooldown": "1.5 sec",
+      "Range": "30 meters"
+    },
+    "q": {
+      "Ability Name": "Resurrect",
+      "Cast Time": "1 sec",
+      "Range": "15 meters"
+    }
+  },
+  "pharah": {
+    "stats": {
+      "Name": "Pharah",
+      "Role": "Offense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "(Pilot)Ability Name": "Rocket Launcher",
+      "Damage": "120 for direct hit",
+      "Splash Damage": "13-80 (depending on range)",
+      "Splash Radius": "3 meters",
+      "Fire Rate": "1 round per second",
+      "Reload Time": "1 sec",
+      "Ammo": "6",
+      "Self Damage": "Up to 40 self damage",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Concussive Blast",
+      "Damage": "1",
+      "Cooldown": "12 sec",
+      "Splash radius": "8 meters",
+      "Headshot": "No"
+    },
+    "shift": {
+      "Ability Name": "Jump Jet",
+      "Cooldown": "10 sec"
+    },
+    "q": {
+      "Ability Name": "Barrage",
+      "Damage": "40 per rocket (2500+ if all connect)",
+      "Duration": "3 sec",
+      "Headshot": "No"
+    }
+  },
+  "reaper": {
+    "stats": {
+      "Name": "Reaper",
+      "Role": "Offense",
+      "Health": "250",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Hellfire Shotguns",
+      "Damage": "2-7 per pellet (20 per shot)",
+      "Fire Rate": "2 rounds per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "8",
+      "Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Shadow Step",
+      "Cast Time": "2 sec",
+      "Range": "Up to 35 meters",
+      "Cooldown": "10 sec"
+    },
+    "shift": {
+      "Ability Name": "Wraith Form",
+      "Invulnerability": "Yes",
+      "Duration": "3 sec",
+      "Cooldown": "8 sec",
+      "Range": "~21 meters",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Death Blossom",
+      "Damage": "200 per second",
+      "Duration": "3 sec",
+      "Radius": "8 meters",
+      "Headshot": "No"
+    }
+  },
+  "reinhardt": {
+    "stats": {
+      "Name": "Reinhardt",
+      "Role": "Defense",
+      "Health": "500 (200 of which is armour)",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Rocket Hammer",
+      "Damage": "75",
+      "Fire Rate": "1 swing per sec",
+      "Range": "5 meters",
+      "Ammo": "Infinite",
+      "Headshot": "No"
+    },
+    "rmb": {
+      "Ability Name": "Barrier Field",
+      "Shield Health": "2000 health",
+      "Recharge Rate": "225 per second when not deployed",
+      "Cooldown": "5 seconds (Cooldown starts when shield reaches 0)"
+    },
+    "e": {
+      "Ability Name": "Fire Strike",
+      "Damage": "100",
+      "Penetrates Shields": "Yes",
+      "Cast Time": "0.25 sec",
+      "Cooldown": "6 sec",
+      "Headshot": "No"
+    },
+    "shift": {
+      "Ability Name": "Charge",
+      "Damage": "Contact is 50, a successful pin is an additional 300",
+      "Range": "50 meters",
+      "Duration": "3 sec with no terrain contact",
+      "Cooldown": "10 sec",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Earthshatter",
+      "Damage": "50",
+      "Stun Time": "2.5 sec",
+      "Cast Time": "0.5 sec",
+      "Range": "20 meters long",
+      "Headshot": "No"
+    }
+  },
+  "roadhog": {
+    "stats": {
+      "Name": "Roadhog",
+      "Role": "Defense",
+      "Health": "600",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Scrap Gun Blast",
+      "Damage": "4-9 per pellet (25 pellets total)",
+      "Fire Rate": "1 round per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "4",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Scrap Gun Ball",
+      "Damage": "50 initial. 4-9 per pellet (25 pellets total)",
+      "Range": "Ball explodes into pellets after 8 meters",
+      "Fire Rate": "1 round per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "4",
+      "Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Take a Breather",
+      "Heal": "300",
+      "Duration": "1 sec",
+      "Cooldown": "8 seconds"
+    },
+    "shift": {
+      "Ability Name": "Chain Hook",
+      "Damage": "30",
+      "Range": "~21 meters",
+      "Duration": "4 sec",
+      "Cooldown": "6 sec",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Whole Hog",
+      "Damage": "7 per pellet, 140per round, ~4000 total",
+      "Fire Rate": "5 rounds per second",
+      "Duration": "6 sec",
+      "Headshot": "No"
+    }
+  },
+  "soldier76": {
+    "stats": {
+      "Name": "Soldier 76",
+      "Role": "Offense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Heavy Pulse Rifle",
+      "Damage": "5-17 (depending on range)",
+      "Fire Rate": "10 rounds per second",
+      "Reload Time": "1 second",
+      "Ammo": "25",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Helix Rockets",
+      "Damage": "120 direct hit",
+      "Splash Damage": "Up to 80 (depending on range)",
+      "Self Damage": "Up to 40 self damage",
+      "Cooldown": "8 sec",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Biotic Field",
+      "Healing": "35 per sec",
+      "Duration": "5 sec",
+      "Cooldown": "15 sec",
+      "Radius": "5 meters"
+    },
+    "shift": {
+      "Ability Name": "Sprint",
+      "Movement Speed": "8.25 meters/sec while active"
+    },
+    "q": {
+      "Ability Name": "Tactical Visor",
+      "Damage": "10-17 (depending on range)",
+      "Duration": "6 sec",
+      "Reloads on Use": "Yes",
+      "Headshot": "Yes (It autolocks to their head!)"
+    }
+  },
+  "symmetra": {
+    "stats": {
+      "Name": "Symmetra",
+      "Role": "Support",
+      "Health": "200 (100 of which is shield)",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Photon Projector: Beam",
+      "Level 1 Damage": "30 damage per second",
+      "Level 2 Damage": "60 damage per second",
+      "Level 3 Damage": "120 damage per second",
+      "Time to Level 3": "2 seconds of continuous fire on an enemy",
+      "Range": "5 meters",
+      "Fire Rate": "8 per second",
+      "Reload Time": "1 second",
+      "Ammo": "100",
+      "Penetrates Shields": "Yes",
+      "Headshot": "No"
+    },
+    "rmb": {
+      "Ability Name": "Photon Projector: Orbs",
+      "Damage": "25-125 (depending on charge time)",
+      "Max Charge Time": "2 seconds",
+      "Fire Rate": "3 per 0.73 sec",
+      "Reload Time": "1 second",
+      "Ammo": "100 (25 used per orb)",
+      "Penetrates Shields": "Yes",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Photon Shield",
+      "Added Shield": "25",
+      "Duration": "Until Ally dies",
+      "Cooldown": "1 sec",
+      "Range": "20 meters",
+      "Stackable": "No"
+    },
+    "shift": {
+      "Ability Name": "Sentry Turret",
+      "Damage": "25 damage per second",
+      "Health": "1",
+      "Max Turrets Deployed": "6",
+      "Max Charges": "3",
+      "Cooldown": "1 Sentry charge per 10 sec",
+      "Range": "10 meters",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Teleporter",
+      "Health": "200",
+      "Cast Time": "200",
+      "Charges per Teleporter": "6",
+      "Reset Swift Strike": "Yes on cast",
+      "Headshot": "No"
+    }
+  },
+  "torbjorn": {
+    "stats": {
+      "Name": "Torbjörn",
+      "Role": "Defense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "(Gun)Ability Name": "Rivet Gun",
+      "(Gun)Damage": "70",
+      "(Gun)Fire Rate": "1.6 rounds per second",
+      "(Gun)Reload Time": "2 sec",
+      "(Gun)Ammo": "18",
+      "(Gun)Headshot": "Yes",
+      "(Hammer)Ability Name": "Forge Hammer",
+      "(Hammer)Damage": "75 per swing",
+      "(Hammer)Fire Rate": "1 swing per second",
+      "(Hammer)Turret Repair": "+50 hp per swing",
+      "(Hammer)Turret Build": "20% per swing"
+    },
+    "rmb": {
+      "Ability Name": "Rivet Gun: Charged Shot",
+      "Damage": "4.5-15 per pellet (10 pellets total)",
+      "Fire Rate": "1.3 rounds per second",
+      "Reload Time": "2 sec",
+      "Ammo": "18 (3 used per shot)",
+      "Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Armour Pack",
+      "Added Armour": "75",
+      "Scrap Cost": "50 per pack",
+      "Cooldown": "None"
+    },
+    "shift": {
+      "Ability Name": "Build Turret",
+      "Level 1 Damage": "28 per second",
+      "Level 1 Health": "150",
+      "Level 1 Fire Rate": "2 rounds per second",
+      "Level 2 Damage": "57 per second",
+      "Level 2 Health": "300",
+      "Level 2 Fire Rate": "4 rounds per second",
+      "Level 3 Damage": "181 per second",
+      "Level 3 Health": "800",
+      "Level 3 Fire Rate": "5 rounds and 4 rockets per second",
+      "Gun Damage": "14",
+      "Rocket Damage": "14",
+      "Turrent Range": "40 meters",
+      "Turret Repair": "+50 hp per swing",
+      "Turret Build": "20% per swing",
+      "Ammo": "Infinite",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Molten Core",
+      "Duration": "12 sec",
+      "Added Armour": "+300",
+      "Repair/Build Rate": "+100%",
+      "Fire Rate": "+50%",
+      "Level 3 Turret": "Requires Level 2 turret"
+    }
+  },
+  "tracer": {
+    "stats": {
+      "Name": "Tracer",
+      "Role": "Offense",
+      "Health": "150",
+      "Movespeed": "6 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Pulse Pistols",
+      "Damage": "1.5-6 per pellet (depending on range)",
+      "Fire Rate": "40 rounds per second",
+      "Reload Time": "1 second",
+      "Ammo": "40",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Blink",
+      "Max Charges": "3",
+      "Cooldown": "3 sec per charge",
+      "Range": "~7 meters"
+    },
+    "e": {
+      "Ability Name": "Recall",
+      "Destination": "Tracers state 3 seconds in the past",
+      "Recall state": "Includes health, ammo, position",
+      "Duration": "1,25 sec",
+      "Cooldown": "12 seconds",
+      "Headshot": "No"
+    },
+    "shift": {
+      "Ability Name": "Blink",
+      "Max Charges": "3",
+      "Cooldown": "3 sec per charge",
+      "Range": "~7 meters"
+    },
+    "q": {
+      "Ability Name": "Pulse Bomb",
+      "Damage": "5 damage if stuck. 400 Explosion damage if stuck",
+      "Delay": "1 sec",
+      "Duration": "10 sec",
+      "Radius": "~3 meters",
+      "Headshot": "Initial bomb contact: Yes. Explosion: No"
+    }
+  },
+  "widowmaker": {
+    "stats": {
+      "Name": "Widowmaker",
+      "Role": "Defense",
+      "Health": "200",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Widow's Kiss: Assault Rifle",
+      "Damage": "13",
+      "Fire Rate": "10 rounds per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "30",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Widow's Kiss: Sniper",
+      "Damage": "12-120 (depending on charge time)",
+      "Max Charge Time": "1 sec",
+      "Fire Rate": "1 round per second",
+      "Reload Time": "1.5 seconds",
+      "Ammo": "30",
+      "Headshot": "Yes. 250% multiplier"
+    },
+    "e": {
+      "Ability Name": "Venom Mine",
+      "Damage": "15 per second",
+      "Duration": "5 sec",
+      "Cooldown": "15 sec",
+      "Radius": "3 meters",
+      "Self Damage": "Yes, if in radius once triggered",
+      "Stackable": "No",
+      "Headshot": "No"
+    },
+    "shift": {
+      "Ability Name": "Grappling hook",
+      "Range": "20 meters",
+      "Cooldown": "12 sec",
+      "Reset on Miss": "Yes"
+    },
+    "q": {
+      "Ability Name": "Infra-Sight",
+      "Duration": "15.5 sec",
+      "Vision for Allies": "Yes"
+    }
+  },
+  "winston": {
+    "stats": {
+      "Name": "Winston",
+      "Role": "Tank",
+      "Health": "500 (100 of which is armour)",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Tesla Cannon",
+      "Damage": "60-65 damage per second",
+      "Fire Rate": "20 roudns per second",
+      "Reload Time": "1.5 seconds",
+      "Range": "8 meters",
+      "Ammo": "100",
+      "Penetrates Shields": "Yes",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Barrier Projector",
+      "Shield Health": "600",
+      "Duration": "6 sec",
+      "Cooldown": "13 sec",
+      "Radius": "5 meters"
+    },
+    "shift": {
+      "Ability Name": "Jump Pack",
+      "Damage": "Up to 50 (depending on range)",
+      "Cooldown": "6 sec (2 sec in Primal Rage)",
+      "Radius": "5 meters",
+      "Perform Actions in Air": "Yes",
+      "Headshot": "No"
+    },
+    "q": {
+      "Ability Name": "Primal Rage",
+      "Damage": "40 per swing, AOE damage and knocks back enemies",
+      "Health": "Fully Healed and HP changed to 1000 (100 of which is armour)",
+      "Duration": "10 seconds",
+      "Movement Speed": "7.1 meters/sec while active",
+      "Jump Pack Reset": "Yes on cast",
+      "Headshot": "No"
+    }
+  },
+  "zarya": {
+    "stats": {
+      "Name": "Zarya",
+      "Role": "Tank",
+      "Health": "400 (200 of which is shield",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Particle Cannon: Beam",
+      "Damage": "75-150 damage per second (depending on charge level)",
+      "Fire Rate": "29 rounds per second",
+      "Range": "15 meters",
+      "Reload Time": "1.5 seconds",
+      "Headshot": "No"
+    },
+    "rmb": {
+      "Ability Name": "Particle Cannon: Explosive Charge",
+      "Damage": "46-95 damage per second (depending on charge level)",
+      "Fire Rate": "1 round per second",
+      "Radius": "2 meters",
+      "Reload Time": "1.5 seconds",
+      "Self Damage": "Up to 50 self damage (depending on charge level)",
+      "Headshot": "No"
+    },
+    "e": {
+      "Ability Name": "Projected Barrier",
+      "Barrier Health": "400",
+      "Duration": "2 sec",
+      "Cooldown": "8 sec",
+      "Range": "30 meters"
+    },
+    "shift": {
+      "Ability Name": "Particle Barrier",
+      "Barrier Health": "200",
+      "Duration": "2 sec",
+      "Cooldown": "10 sec",
+      "Range": "Self cast"
+    },
+    "q": {
+      "Ability Name": "Graviton Surge",
+      "Damage": "5.5 damage per second",
+      "Duration": "4 sec",
+      "Radius": "8 meters",
+      "Headshot": "No"
+    }
+  },
+  "zenyatta": {
+    "stats": {
+      "Name": "Zenyatta",
+      "Role": "Support",
+      "Health": "150 (100 of which is shield)",
+      "Movespeed": "5.5 meters/sec",
+      "Release Date": "27/10/2015"
+    },
+    "lmb": {
+      "Ability Name": "Orb of Destruction: Energy Orb",
+      "Damage": "45",
+      "Fire Rate": "3 rounds per second",
+      "Reload Time": "2 seconds",
+      "Ammo": "20",
+      "Headshot": "Yes"
+    },
+    "rmb": {
+      "Ability Name": "Orb of Destruction: Orb Volley",
+      "Damage": "35 per orb (up to 5 orbs in a volley)",
+      "Charge Time": "2-2.5 sec",
+      "Reload Time": "2 seconds",
+      "Ammo": "20 (uses up to 5 per charge)",
+      "Headshot": "Yes"
+    },
+    "e": {
+      "Ability Name": "Orb of Discord",
+      "Damage Increase": "50%",
+      "Duration": "Until LOS is broken for 3 sec OR you or the enemy die",
+      "Range": "40 meters",
+      "Cooldown": "None",
+      "Max Active": "1",
+      "Stackable": "No"
+    },
+    "shift": {
+      "Ability Name": "Orb of Harmony",
+      "Healing": "30 per second",
+      "Duration": "Until LOS is broken for 3 sec OR you or the ally die",
+      "Range": "40 meters",
+      "Cooldown": "None",
+      "Max Active": "1",
+      "Stackable": "No"
+    },
+    "q": {
+      "Ability Name": "Transcendence",
+      "Healing": "100 per second",
+      "Invulnerability": "Yes",
+      "Radius": "10 meters",
+      "Duration": "6 sec",
+      "Headshot": "No"
+    }
+  }
+}

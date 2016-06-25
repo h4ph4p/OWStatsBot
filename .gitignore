@@ -1,0 +1,12 @@
+# Macintosh desktop services store files
+.DS_Store
+
+# Windows thumbs database file
+Thumbs.db
+
+# Installer logs
+pip-log.txt
+
+# Settings file
+userinfo.py
+userinfo.pyc
