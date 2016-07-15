@@ -908,13 +908,13 @@
     "stats": {
       "Name": "Zenyatta",
       "Role": "Support",
-      "Health": "150 (100 of which is shield)",
+      "Health": "200 (150 of which is shield)",
       "Movespeed": "5.5 meters/sec",
       "Release Date": "27/10/2015"
     },
     "lmb": {
       "Ability Name": "Orb of Destruction: Energy Orb",
-      "Damage": "45",
+      "Damage": "40",
       "Fire Rate": "3 rounds per second",
       "Reload Time": "2 seconds",
       "Ammo": "20",
@@ -922,7 +922,7 @@
     },
     "rmb": {
       "Ability Name": "Orb of Destruction: Orb Volley",
-      "Damage": "35 per orb (up to 5 orbs in a volley)",
+      "Damage": "40 per orb (up to 5 orbs in a volley)",
       "Charge Time": "2-2.5 sec",
       "Reload Time": "2 seconds",
       "Ammo": "20 (uses up to 5 per charge)",
@@ -952,6 +952,7 @@
       "Invulnerability": "Yes",
       "Radius": "10 meters",
       "Duration": "6 sec",
+      "Movespeed": "Doubled while active",
       "Headshot": "No"
     }
   }
